@@ -2,8 +2,8 @@
 REM 打包 Agnes AI 创作工具为独立可执行文件
 REM 用法: 双击 build.bat
 
-echo === 安装 PyInstaller ===
-pip install pyinstaller --quiet
+echo === 安装依赖 ===
+pip install pyinstaller pillow --quiet
 
 echo === 打包中 ===
 pyinstaller --onefile --windowed --name "Agnes-AI" --add-data ".env;." --clean app.py

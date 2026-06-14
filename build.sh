@@ -4,8 +4,8 @@
 
 set -e
 
-echo "=== 安装 PyInstaller ==="
-pip install pyinstaller --quiet
+echo "=== 安装依赖 ==="
+pip install pyinstaller pillow --quiet
 
 echo "=== 打包中 ==="
 pyinstaller \
